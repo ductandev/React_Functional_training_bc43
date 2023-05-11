@@ -18,6 +18,13 @@ export default function Header() {
                         <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hooks</a>
                         <div className="dropdown-menu" aria-labelledby="dropdownId">
                             <NavLink className="dropdown-item" to="/usestate">UseState</NavLink>
+                            <NavLink className="dropdown-item" to="/useeffect">UseEffect</NavLink>
+                            <NavLink className="dropdown-item" to="/usecallback">Usecallback</NavLink>
+                            <NavLink className="dropdown-item" to="/usememo">Use memo</NavLink>
+                            <NavLink className="dropdown-item" to="/useref">Use ref</NavLink>
+
+                            
+                            <NavLink className="dropdown-item" to="/demo-chat">Redux-demochat</NavLink>
                         </div>
                     </li>
                 </ul>
