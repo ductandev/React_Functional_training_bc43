@@ -20,3 +20,4 @@
 [--UseRefDemo]() <br>
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/9ccf1ad7-6c15-47ed-a84e-cbaf36630ef9)
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/36634aff-9501-41cc-be1d-d2b824da8659)
+![code](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/f1135c37-a693-4ff4-8395-b734476d820f)
