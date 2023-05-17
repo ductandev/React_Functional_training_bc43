@@ -8,8 +8,8 @@ import Login from './pages/Login';
 import UseStateDemo from './pages/Hooks/UseStateDemo';
 import UseEffectDemo from './pages/Hooks/UseEffectDemo';
 import UseCallBackDemo from './pages/Hooks/UseCallback/UseCallBackDemo';
-
-
+import UseMemoDemo from './pages/Hooks/UseMemo/UseMemoDemo';
+import UseRefDemo from './pages/Hooks/UseRefDemo/UseRefDemo';
 // cấu hình redux
 import { Provider } from 'react-redux'
 import { store } from './redux/configStore'
@@ -17,8 +17,7 @@ import DemoAppChat from './pages/Hooks/ReduxHook/DemoAppChat';
 import Profile from './pages/Profile';
 import Detail from './pages/Detail';
 import Search from './pages/Search';
-import UseMemoDemo from './pages/Hooks/UseMemo/UseMemoDemo';
-import UseRefDemo from './pages/Hooks/UseRefDemo/UseRefDemo';
+import Register from './pages/Register';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -41,6 +40,7 @@ root.render(
             <Route path=':id' element={<Detail />}></Route>
           </Route>
           <Route path='search' element={<Search />}></Route>
+          <Route path='register' element={<Register />}></Route>
 
 
         </Route>

@@ -12,8 +12,8 @@ const UseEffectDemo = (props) => {
     // useEffect(()=>{
     //     //UseEffect :
     //     /*
-    //         chạy sau khi component render (didmount)
-    //         chạy sau mỗi lần updating (state hoặc props thay đổi) (didupdate)
+    //         chạy sau khi component render --> tương tự (didmount)
+    //         chạy sau mỗi lần updating (state hoặc props thay đổi) --> tương tự (didupdate)
     //     */
     //     console.log('useEffect run');
     // });

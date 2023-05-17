@@ -35,6 +35,6 @@ const appChatReducer = createSlice({
     }
 });
 
-export const { addCommentAction,updateUserComment} = appChatReducer.actions
+export const { addCommentAction, updateUserComment} = appChatReducer.actions
 
 export default appChatReducer.reducer

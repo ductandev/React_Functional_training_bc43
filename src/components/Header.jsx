@@ -1,7 +1,30 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux'
+import { USER_LOGIN, clearStorage } from '../util/config';
 export default function Header() {
-    // bs5-navbar-background
+  const { userLogin } = useSelector(state => state.userReducer);
+  const renderLoginLink = () => {
+    if (userLogin.email !== '') {
+
+      return <>
+        <li className='nav-item'>
+          <NavLink className="nav-link" to="/profile">Hello ! {userLogin.email}</NavLink>
+        </li>
+        <li className='nav-item'>
+          <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => {
+            clearStorage(USER_LOGIN);
+            window.location.reload(); //f5
+          }}>Logout</span>
+        </li>
+      </>
+    }
+
+    return <li className='nav-item'>
+      <NavLink className="nav-link" to="/login">Login</NavLink>
+    </li>
+  }
+  //bs5-navbar-background
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             <NavLink className="navbar-brand" to="/">Cybersoft</NavLink>
@@ -12,7 +35,10 @@ export default function Header() {
                         <NavLink className="nav-link active" to="/" aria-current="page">Home <span className="visually-hidden">(current)</span></NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/login">Login</NavLink>
+                        {renderLoginLink()}
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/register">Register</NavLink>
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hooks</a>
