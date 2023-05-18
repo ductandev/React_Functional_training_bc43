@@ -1,8 +1,8 @@
-# Buổi 1: UseStateDemo
+# Buổi 1: UseStateDemo (có sẵn của react)
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/1784b5e0-3f4c-4e1c-98ae-e2d0bb461dcb)
 ![code](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b3105005-df30-4a1f-b942-b2c01ae7176f) <br> <br> <br>
 
-# Buổi 2: UseEffectDemo - UseCallBackDemo - UseMemo
+# Buổi 2: UseEffectDemo - UseCallBackDemo - UseMemo - UseRef (có sẵn của react)
 [--UseEffectDemo]()
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/1c8add4b-30aa-4563-b335-7080fd5456f8) 
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b083e877-6494-4be7-90bb-90d968941676)
@@ -22,10 +22,11 @@
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/36634aff-9501-41cc-be1d-d2b824da8659)
 ![code](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/f1135c37-a693-4ff4-8395-b734476d820f)
 
-# Buổi 3: React thư viện  react hook router redux
+# Buổi 3: React thư viện - useSelector - useDispatch - 
 <p>Cài đặt thư viện redux toolkit</p>
 
 ```
 $ npm install @reduxjs/toolkit
 $ npm install react-redux 
 ```
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e159e322-3d42-4c3b-9268-0acddf1b8b91)
