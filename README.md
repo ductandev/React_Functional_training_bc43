@@ -29,4 +29,9 @@
 $ npm install @reduxjs/toolkit
 $ npm install react-redux 
 ```
+[--useSelector && useDispatch]() <br>
+<p>- 2 Thư viện hook "useSelector" và "useDispatch" không phải của react core cung cấp, mà 2 thư viện này thuộc thư viện react-redux cung cấp cho phép ta truy cập đến reducer một cách dễ dàng và ngắn gọn hơn.</p>
+
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b58d5007-d444-4cab-b38b-60e0795a93aa)
+
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e159e322-3d42-4c3b-9268-0acddf1b8b91)
