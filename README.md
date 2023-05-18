@@ -21,3 +21,11 @@
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e41270f4-2832-4179-afbc-f6c6b23af664)
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/36634aff-9501-41cc-be1d-d2b824da8659)
 ![code](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/f1135c37-a693-4ff4-8395-b734476d820f)
+
+# Buổi 3: React thư viện  react hook router redux
+<p>Cài đặt thư viện redux toolkit</p>
+
+```
+$ npm install @reduxjs/toolkit
+$ npm install react-redux 
+```
