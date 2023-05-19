@@ -56,6 +56,18 @@ import { useDispatch, useSelector } from 'react-redux'
 ![code](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/f65a4d8a-bb67-4028-ad3e-fb845630ec26)
 
 
+# Buổi 4: Formik (lấy dữ liệu từ form) - Yup (thư viện validation) - Call API (cấu hình interceptors)
+Cài thư viện formik && Thư viện validation
+```
+$ npm i formik
+$ npm i yup
+
+import { useFormik } from 'formik';
+import * as yup from 'yup'
+```
+
+[--Register]() <br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b71bc15b-6de0-4bad-a5f9-b727033181a3)
 
 
 
