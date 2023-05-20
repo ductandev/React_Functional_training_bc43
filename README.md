@@ -66,9 +66,17 @@ import { useFormik } from 'formik';
 import * as yup from 'yup'
 ```
 
-[--Register]() <br>
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b71bc15b-6de0-4bad-a5f9-b727033181a3)
+[--Register from using Formik && Yup]() <br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/5bd789c0-21bc-4ec5-8d70-3e89806ad318) <br> <br>
 
+
+[--Call API (cấu hình interceptors)]() <br>
+Đăng ký <br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/cb2dd172-087d-456f-9cac-5242243aac97)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e55ae5c2-e7bd-4d5f-af8e-65b9baa56146)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/43090a3f-83f5-4973-a931-a0c1a125f952)
+
+ 
 
 
 
