@@ -21,14 +21,12 @@ const appChatReducer = createSlice({
     reducers: {
         addCommentAction: (state, action) => {
             //Lấy dữ liệu action từ payload
-            const userComment = { ...action.payload };
-
+            const userComment = { ...action.payload };  // nhớ khi dữ liệu là object thì nhớ có ngoặc
             state.arrComment.push(userComment);
         },
         updateUserComment: (state,action) => {
             //Lấy id và value từ action payload
             const {id,value} = action.payload;
-            
             console.log(action);
             state.userComment[id] = value;
         }

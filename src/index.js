@@ -18,6 +18,7 @@ import Profile from './pages/Profile';
 import Detail from './pages/Detail';
 import Search from './pages/Search';
 import Register from './pages/Register';
+import Movie from './pages/Movie';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,10 +37,12 @@ root.render(
 
           <Route path='demo-chat' element={<DemoAppChat />}></Route>
           <Route path='profile' element={<Profile />}></Route>
-          <Route path='detail'>
-            <Route path=':id' element={<Detail />}></Route>
+          <Route path='detail'>{/* khi người dùng gõ "https://.../detail" mà ko có thêm id thì nó sẽ ko load ra cái component nào hết */}                       
+            <Route path=':id' element={<Detail />}></Route>   {/* khi có id thì mới load được trang detail */} 
           </Route>
           <Route path='search' element={<Search />}></Route>
+          
+          <Route path='movie' element={<Movie />}></Route>
           <Route path='register' element={<Register />}></Route>
 
 

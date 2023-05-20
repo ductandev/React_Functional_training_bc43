@@ -1,3 +1,4 @@
+// rafce
 import React, { useEffect, useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import axios from 'axios';
@@ -6,6 +7,7 @@ const Detail = () => {
     const [productDetail,setProductDetail] = useState({})
     //Lấy tham số trên url
     const params = useParams();
+    
     useEffect(() => {
         //Call api lúc trang vừa load
         getProductDetailApi(params.id);
@@ -31,9 +33,10 @@ const Detail = () => {
                 <p>{productDetail.description}</p>
             </div>
         </div>
+
         <h3>Relate products</h3>
         <div className='row'>
-            {productDetail.relatedProducts?.map((prod,index)=>{
+            {productDetail.relatedProducts?.map((prod,index)=>{             // ?: optional trainning
                 return  <div className='col-4' key={index}>
                     <div className="card">
                         <img src={prod.image} alt="" />

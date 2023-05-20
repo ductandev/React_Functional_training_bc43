@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { USER_LOGIN, getStorageJSON, http, saveStorageJSON } from '../../util/config';
+// import {history} from '../../index';
 
 const initStateUserLogin = () => {
     let userLoginInit = {
@@ -48,7 +49,7 @@ export const {loginAction,getProfileAction} = userReducer.actions
 
 export default userReducer.reducer
 
-// ------------- action async ----------
+// ------------- action async (action thunk) -- thêm hậu tố api để biết là action async ----------
 
 export const loginActionApi = (userLogin) => { // {email:'',password:''}
     
@@ -59,9 +60,10 @@ export const loginActionApi = (userLogin) => { // {email:'',password:''}
             const action = loginAction(res.data.content);
             //const action = {type:'userReducer/loginAction', payload: res.data.content}
             dispatch(action);
-
             //Thành công thì lưu vào storage
             saveStorageJSON(USER_LOGIN,res.data.content);
+            //SAu khi đăng nhập thành công thì chuyển hướng trang sang profile
+            // history.push('/profile');
         }catch(err) {
             alert(err.response?.data.message);
         }
@@ -75,15 +77,14 @@ export const getProfileActionApi = () => {
     return async (dispatch,getState) => {
         // console.log(getState)
         const accessToken = getState().userReducer.userLogin.accessToken;
-
         //Gọi api getprofile
         const res = await http.post(`/api/Users/getProfile`,{},{
-            //config header
+            // config header
             headers: {
                 Authorization: `Bearer ${accessToken}`
             }
         });
-
+        // const res = await http.post(`/api/Users/getProfile`);
         const action = getProfileAction(res.data.content);
         dispatch(action);
 

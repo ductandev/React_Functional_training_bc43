@@ -1,6 +1,7 @@
 //rafce
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { http } from '../../util/config';
 
 
 const UseEffectDemo = (props) => {
@@ -51,10 +52,11 @@ const UseEffectDemo = (props) => {
 
     //=====================================================================
     const getProductDetail = async (id) => {
-        const result = await axios({
-            url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${id}`,
-            method: 'GET'
-        });
+        // const result = await axios({
+        //     url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${id}`,
+        //     method: 'GET'
+        // });
+        const result = await http.get(`/api/Product/getbyid?id=${id}`);
         //Sau khi lấy dữ liệu từ api về đưa vào state arrProduct
         setProductDetail(result.data.content)
     }
@@ -62,10 +64,11 @@ const UseEffectDemo = (props) => {
     //=====================================================================
     console.log('arrProduct', arrProduct);
     const getAllProduct = async () => {
-        const result = await axios({
-            url: 'https://shop.cyberlearn.vn/api/Product',
-            method: 'GET'
-        });
+        // const result = await axios({
+        //     url: 'https://shop.cyberlearn.vn/api/Product',
+        //     method: 'GET'
+        // });
+        const result = await http.get(`/api/product`);
         //Sau khi lấy dữ liệu từ api về đưa vào state arrProduct
         setArrayProduct(result.data.content)
     }

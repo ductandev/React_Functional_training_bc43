@@ -10,7 +10,7 @@ const UseRefDemo = () => {
 
     const [number, setNumber] = useState(1);
 
-    const inputRef = useRef({})
+    const inputRef = useRef({});
 
 
     // useRef: dùng để lưu lại các giá trị thay đổi sau các lần render mà không cần render lại giao diện. Sử dụng cho các trường hợp đặc biệt của state (state thay đổi tuy nhiên state không binding lên giao diện)
@@ -27,7 +27,7 @@ const UseRefDemo = () => {
         console.log('userLogin', userLoginRef.current);
 
         // setUserLogin({
-        //     ...userLogin,
+        //     ...userLogin,    //cách giữ lại giá trị cũ
         //     [id]: value
         // });
     }
@@ -40,6 +40,7 @@ const UseRefDemo = () => {
 
     return (
         <form className='container' onSubmit={handleSubmit}>
+            {/* Type phải để button chứ ko để thì nó sẽ tự hiểu type là submit nên nó sẽ tự động reload lại trang */}
             <button type='button' onClick={() => {
                 setNumber(number + 1);
             }}>+</button>

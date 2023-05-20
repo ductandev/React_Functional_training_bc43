@@ -11,7 +11,7 @@ const UseCallBackDemo = () => {
     }
 
     //useCallback dùng để cache lại giá trị hàm, khi dependency thay đổi thị hàm mới được tạo mới lại
-    const callBackUILike = useCallback(UILike , [like]);
+    const callBackUILike = useCallback(UILike , [like]);    //  useCallback(Hàm, giá trị thay đổi);
 
   return (
     <div className='container'>

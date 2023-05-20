@@ -10,24 +10,24 @@ const DemoAppChat = (props) => {
     // Cách lấy state về chỉ 1 dòng duy nhất
     const { arrComment, userComment } = useSelector(state => state.appChatReducer);
     const dispatch = useDispatch();
+    // const userComment = useRef ({
+    //     name: '',
+    //     content: ''
+    // })
 
     // ====================================================================
     const handleSubmit = (e) => {
-        e.preventDefault();//chặn sự kiện reload trang
+        e.preventDefault();                             //chặn sự kiện reload trang
         // console.log(userComment.current);
-        //Đưa dữ liệu form lên redux
-        const action = addCommentAction(userComment);
-        //Gửi dữ liệu lên reducer
-        dispatch(action);
+        const action = addCommentAction(userComment);   //Đưa dữ liệu form lên redux
+        dispatch(action);                               //Gửi dữ liệu lên reducer
     }
 
     // ====================================================================
     const handleChange = (e) => {
         const { id, value } = e.target;
-        //Đưa dữ liệu id và value lên redux
-        const action = updateUserComment({ id, value });
-        //Gửi object có id và value lên redux
-        dispatch(action);
+        const action = updateUserComment({ id, value });    //Đưa dữ liệu id và value lên redux
+        dispatch(action);                                   //Gửi object có id và value lên redux
     }
     // ====================================================================
     return (

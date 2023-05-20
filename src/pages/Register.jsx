@@ -5,6 +5,7 @@ import { useFormik } from 'formik';
 import * as yup from 'yup'
 import {useNavigate} from 'react-router-dom';
 import { http } from '../util/config';
+
 const Register = (props) => {
     const navigate = useNavigate()
     const registerFrm = useFormik({
@@ -25,16 +26,14 @@ const Register = (props) => {
             console.log(values);
             try {
                 //Lấy dữ liệu từ form => call api gửi dữ liệu đi
-                const res = await http.post('/api/Users/signup', values);
-                alert(res.data?.message);
+                const res = await http.post('/api/Users/signup', values);   //values: dữ liệu gửi đi lên api
+                alert(res.data?.message);                                   // viết bằng optional trainning
                 navigate('/login')
 
             }catch(err) {
                 alert(err.response.data.message);
 
             }
-            
-
         }
     })
 
@@ -59,7 +58,8 @@ const Register = (props) => {
                         <p>Gender</p>
                         <input className='form-check-input' id="gender1" name='gender' type='radio' value={true} onInput={registerFrm.handleChange} />
                         <label for="gender1">Male</label>
-                        <input className='form-check-input' id="gender2" name='gender' type='radio' value={false} onInput={registerFrm.handleChange} /> <label for="gender2">Female</label>
+                        <input className='form-check-input' id="gender2" name='gender' type='radio' value={false} onInput={registerFrm.handleChange} /> 
+                        <label for="gender2">Female</label>
                     </div>
                 </div>
                 <div className='col-6'>
@@ -76,7 +76,7 @@ const Register = (props) => {
 
                     </div>
                     <div className='form-group mt-2'>
-                        <button type='submit' className='btn btn-dark' disabled={!registerFrm.isValid}>Submit</button>
+                        <button type='submit' className='btn btn-dark' disabled={!registerFrm.isValid}>Submit</button>          {/* isValid: là hợp lệ */}
                     </div>
                 </div>
             </div>
