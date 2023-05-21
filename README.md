@@ -71,7 +71,7 @@ import * as yup from 'yup'
 
 
 [--Call API (cấu hình interceptors)]() <br>
-Đăng ký <br>
+Gửi dữ liệu nhập form đăng ký lên api <br>
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/cb2dd172-087d-456f-9cac-5242243aac97)
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e55ae5c2-e7bd-4d5f-af8e-65b9baa56146)
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/43090a3f-83f5-4973-a931-a0c1a125f952)
