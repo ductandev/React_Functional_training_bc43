@@ -71,14 +71,23 @@ import * as yup from 'yup'
 
 
 [--Call API (cấu hình interceptors)]() <br>
-Gửi dữ liệu nhập form đăng ký lên api <br>
+Gửi dữ liệu input form đăng ký lên API <br>
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/cb2dd172-087d-456f-9cac-5242243aac97)
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e55ae5c2-e7bd-4d5f-af8e-65b9baa56146)
+
+Nếu Email khác rỗng thì sẽ dẫn đến trang "profiles", ngược lại thì đá về trang "login"
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/43090a3f-83f5-4973-a931-a0c1a125f952)
 
- 
 
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e55ae5c2-e7bd-4d5f-af8e-65b9baa56146)
 
+ Dùng action async (action thunk) để call AIP gửi dữ liệu đăg nhập và trẻ về thông tin tên người dùng trên header
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/1eb3d671-3f98-4e9c-9ed3-ee7f1581a8de)
+
+Viết hàm để lưu thông tin user localStorage 
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/25ff95e4-e172-449f-9f36-922e98cb56dc)
+
+Gọi localStore để lấy dữ liệu user, nếu ko có thì trả về giá trị mặc định
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/f100a82c-de3b-4964-89b8-cece37f148b8)
 
 
 
