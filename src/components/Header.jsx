@@ -11,6 +11,7 @@ export default function Header() {
                 <li className='nav-item'>
                     <NavLink className="nav-link" to="/profile">Hello ! {userLogin.email}</NavLink>
                 </li>
+                {/* Đăng xuất */}
                 <li className='nav-item'>
                     <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => {
                         clearStorage(USER_LOGIN);

@@ -73,20 +73,24 @@ export const loginActionApi = (userLogin) => { // {email:'',password:''}
 
 
 export const getProfileActionApi = () => {
-
+    /*
+        Action async là 1 hàm chưa được gọi và trong đó có 2 tham số.
+        Thông số thứ 1: dispatch là thông số khi mà ta có dữ liệu từ API để ta dùng cái đó dispatch dữ liệu lên redux
+        Thông số thứ 2: getState là hàm thứ 2 ( rất ít khi sử dụng) --> hàm này chứa toàn bộ State của ứng dụng, có thể lấy các state từ các từ ducer khác.
+    */ 
     return async (dispatch,getState) => {
         // console.log(getState)
         const accessToken = getState().userReducer.userLogin.accessToken;
         //Gọi api getprofile
-        const res = await http.post(`/api/Users/getProfile`,{},{
-            // config header
+        const res = await http.post(`/api/Users/getProfile`,{},{   // Object rỗng {}: là body, header là tham số thứ 3.
+            // config header---> tham số thứ 3 là phần header. Body là phần dữ liệu người dùng nhập và gửi đi theo format BE yêu cầu.Header là phần dev sẽ là phần sử lý ngầm của dev.
             headers: {
                 Authorization: `Bearer ${accessToken}`
             }
         });
         // const res = await http.post(`/api/Users/getProfile`);
         const action = getProfileAction(res.data.content);
-        dispatch(action);
+        dispatch(action); //Đưa dữ liệu lên redux --> vì ở đây viết theo dạng async action.
 
     }
 }
