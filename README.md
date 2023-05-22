@@ -93,8 +93,12 @@ Logout và clear localStorage
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/1da24369-6294-4beb-a3ef-741d64e419b2)
 
 Call API get proflies
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/22f43db6-0afa-4531-8cd6-3351580e3af1)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/22f43db6-0afa-4531-8cd6-3351580e3af1) <br>
 
+
+# Buổi 5: Custom hook interceptor
+Cấu hình chung cho Header API (`Bearer ${token}`) --> ⭐ Lưu ý: Tránh tình trạng BE đổi token hay, nên sử dụng ho tất cả khi call API
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/353e8de6-2092-4cfb-b152-6270db1ecc51)
 
 
 
