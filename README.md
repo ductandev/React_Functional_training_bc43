@@ -86,9 +86,14 @@ Nếu Email khác rỗng thì sẽ dẫn đến trang "profiles", ngược lại
 Viết hàm để lưu thông tin user localStorage 
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/25ff95e4-e172-449f-9f36-922e98cb56dc)
 
-Gọi localStore để lấy dữ liệu user, nếu ko có thì trả về giá trị mặc định
+Gọi localStore để lấy dữ liệu user, nếu ko có thì trả về giá trị state mặc định, nếu có thì nó sẽ tự động đăng nhập.
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/f100a82c-de3b-4964-89b8-cece37f148b8)
 
+Logout và clear localStorage
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/1da24369-6294-4beb-a3ef-741d64e419b2)
+
+Call API get proflies
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/22f43db6-0afa-4531-8cd6-3351580e3af1)
 
 
 
