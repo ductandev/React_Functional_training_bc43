@@ -97,7 +97,7 @@ Call API get proflies
 
 
 # Buổi 5: Custom hook interceptor
-Cấu hình chung cho Header API (`Bearer ${token}`) --> ⭐ Lưu ý: Tránh tình trạng BE thay đổi dữ liệu header, nên sử dụng ho tất cả khi call API
+Cấu hình chung cho Header API, cài đặt interCepter cho request API (`Bearer ${token}`) --> ⭐ Lưu ý: Tránh tình trạng BE thay đổi dữ liệu header, nên sử dụng cho tất cả khi call API
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/353e8de6-2092-4cfb-b152-6270db1ecc51)
 
 
