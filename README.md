@@ -97,8 +97,18 @@ Call API get proflies
 
 
 # Buổi 5: Custom hook interceptor
-Cấu hình chung cho Header API, cài đặt interCepter cho request API (`Bearer ${token}`) --> ⭐ Lưu ý: Tránh tình trạng BE thay đổi dữ liệu header, nên sử dụng cho tất cả khi call API
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/353e8de6-2092-4cfb-b152-6270db1ecc51)
+Cấu hình chung cho Header API, cài đặt interCepter cho request API (`Bearer ${token}`) --> ⭐ Lưu ý: Tránh tình trạng BE thay đổi dữ liệu header, nên sử dụng header cho tất cả khi call API
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/353e8de6-2092-4cfb-b152-6270db1ecc51)<br><br>
+
+
+[--Movie)]() <br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8c6d0f50-267f-4c6d-a0fb-a3f527b206c9)
+
+Call API danh sách phim  
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/dcb528bb-7445-4aac-8550-199c683f843b)
+
+
+[--Thư viện history)]() <br>
 
 
 
