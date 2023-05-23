@@ -113,9 +113,18 @@ Call API danh sách phim
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/d05e88bc-2579-4846-9afe-fe7fd627d9d7)
 
 - Nếu chưa đăng nhập thì sẽ đá về trang login yêu cầu đăng nhập còn đăng nhập rồi thì sẽ chuyển đến trang profiles.
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/657ad01f-d859-41e4-bd67-c15dee9fe355)
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8072af7b-298b-432b-be26-4b9ff6f2ebc2)
 
+
+[--Custom hook)]() <br>
+Trang web tham khảo thêm về (custom) hooks:
+1. https://usehooks.com/ (custom hooks)
+2. https://usehooks-ts.com/ (custom hooks)
+3. https://mantine.dev/hooks/use-counter/ (bộ hooks của thư viện mantine)
+4. https://github.com/streamich/react-use
+
+- call API sử dụng custom hook và render ra giao diện
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/ed8c1e85-7bc1-42f6-8032-decac1fe33f6)
 
 
 
