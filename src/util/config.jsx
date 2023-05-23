@@ -1,5 +1,6 @@
 // Thư mục util này dùng để tái sử dụng cho các dự án
-import axios from 'axios'
+import axios from 'axios';
+import {history} from '../index'
 
 //cấu hình hệ thống
 export const DOMAIN = 'https://shop.cyberlearn.vn';
@@ -43,7 +44,7 @@ export const {saveStorageJSON,getStorageJSON,clearStorage} = {
             const data = JSON.parse(localStorage.getItem(name));
             return data;
         }
-        return undefined;       // nếu store ko có thì trả về undifine
+        return undefined;       // nếu store ko có thì trả về undefine
     },
     clearStorage: (name) => {
         localStorage.removeItem(name)
@@ -56,13 +57,13 @@ http.interceptors.request.use((config) => {
     //headers: (dev định nghĩa)
     //data (body): (lấy từ các input hoặc tham số từ phía client)
     config.headers = {...config.headers}
-    let token = getStorageJSON(USER_LOGIN)?.accessToken;
+    let token = getStorageJSON(USER_LOGIN)?.accessToken;   // localStorage là 1 object: chứa "accessToken" và "email"
     config.headers.Authorization = `Bearer ${token}`;
     config.headers.tokenCybersoft = `CybersoftDemo`;
 
 
     return config;
-}, (err) => {
+}, (err) => {       // Nếu thất bại sẽ nhảy vô hàm này sẽ biết lỗi nào
     return Promise.reject(err);
 })
 
@@ -70,7 +71,13 @@ http.interceptors.request.use((config) => {
 http.interceptors.response.use((res)=>{ 
     return res;
 },(err)=> {
-    //Xử lý lỗi cho api
+    //Xử lý lỗi cho api bị lỗi theo status code
+    console.log(err);
+    if(err.response?.status === 401) {
+        alert('Đăng nhập để vào trang này !');
+        history.push('/login');
+    }
+    return Promise.reject(err); //Bắn ra lỗi thông qua promise
 });
 
 /* statusCode thông dụng : 

@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { USER_LOGIN, getStorageJSON, http, saveStorageJSON } from '../../util/config';
-// import {history} from '../../index';
+import {history} from '../../index';
 
 const initStateUserLogin = () => {
     let userLoginInit = {
@@ -63,7 +63,8 @@ export const loginActionApi = (userLogin) => { // {email:'',password:''}
             //Thành công thì lưu vào storage
             saveStorageJSON(USER_LOGIN,res.data.content);
             //SAu khi đăng nhập thành công thì chuyển hướng trang sang profile
-            // history.push('/profile');
+            history.push('/profile');
+            
         }catch(err) {
             alert(err.response?.data.message);
         }
@@ -82,12 +83,13 @@ export const getProfileActionApi = () => {
         // console.log(getState)
         const accessToken = getState().userReducer.userLogin.accessToken;
         //Gọi api getprofile
-        const res = await http.post(`/api/Users/getProfile`,{},{   // Object rỗng {}: là body, header là tham số thứ 3.
-            // config header---> tham số thứ 3 là phần header. Body là phần dữ liệu người dùng nhập và gửi đi theo format BE yêu cầu.Header là phần dev sẽ là phần sử lý ngầm của dev.
-            headers: {
-                Authorization: `Bearer ${accessToken}`
-            }
-        });
+        const res = await http.post(`/api/Users/getProfile`); 
+        // const res = await http.post(`/api/Users/getProfile`,{},{   // tham số thứ 2 Object rỗng {}: là body được định nghĩa bởi BE, header là tham số thứ 3.
+        //     // config header---> tham số thứ 3 là phần header. Body là phần dữ liệu người dùng nhập và gửi đi theo format BE yêu cầu.Header là phần dev sẽ là phần sử lý ngầm của dev.
+        //     headers: {
+        //         Authorization: `Bearer ${accessToken}`
+        //     }
+        // });
         // const res = await http.post(`/api/Users/getProfile`);
         const action = getProfileAction(res.data.content);
         dispatch(action); //Đưa dữ liệu lên redux --> vì ở đây viết theo dạng async action.

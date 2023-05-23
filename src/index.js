@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 
 // Cấu hình react router dom
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, unstable_HistoryRouter as HistoryRouter, Routes, Route } from 'react-router-dom'
 import HomeTemplate from './templates/HomeTemplate';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -20,6 +20,9 @@ import Search from './pages/Search';
 import Register from './pages/Register';
 import Movie from './pages/Movie';
 
+import {createBrowserHistory} from 'history'
+// Tạo ra 1 history tương tự useNaviagte (useNaviagte: chỉ sài được cho funtional component)
+export const history = createBrowserHistory();  //history sài được cho cả class và funtional component
 
 // // Cài đặt ants
 // import 'antd/dist/reset.css'
@@ -30,7 +33,7 @@ import Movie from './pages/Movie';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store} >
-    <BrowserRouter>
+    <HistoryRouter history={history}>
       <Routes>
         <Route path='' element={<HomeTemplate />}>
           <Route index element={<Home />}></Route>
@@ -48,14 +51,13 @@ root.render(
             <Route path=':id' element={<Detail />}></Route>   {/* khi có id thì mới load được trang detail */} 
           </Route>
           <Route path='search' element={<Search />}></Route>
-          
           <Route path='movie' element={<Movie />}></Route>
           <Route path='register' element={<Register />}></Route>
 
 
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HistoryRouter>
   </Provider>
 
 );

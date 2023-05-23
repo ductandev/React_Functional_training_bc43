@@ -93,8 +93,38 @@ Logout và clear localStorage
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/1da24369-6294-4beb-a3ef-741d64e419b2)
 
 Call API get proflies
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/22f43db6-0afa-4531-8cd6-3351580e3af1)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/22f43db6-0afa-4531-8cd6-3351580e3af1) <br>
 
+
+# Buổi 5: Custom hook interceptor
+Cấu hình chung cho Header API, cài đặt interCepter cho request API (`Bearer ${token}`) --> ⭐ Lưu ý: Tránh tình trạng BE thay đổi dữ liệu header, nên sử dụng header cho tất cả khi call API
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/353e8de6-2092-4cfb-b152-6270db1ecc51)<br><br>
+
+
+[--Movie)]() <br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8c6d0f50-267f-4c6d-a0fb-a3f527b206c9)
+
+Call API danh sách phim  
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/dcb528bb-7445-4aac-8550-199c683f843b)
+
+
+[--Thư viện history, cấu hình request và response)]() <br>
+- "useNavigate" chỉ sử dụng được trong functional component nhưng "history" sử sụng được bất kỳ file nào kể cả trong reducer
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/d05e88bc-2579-4846-9afe-fe7fd627d9d7)
+
+- Nếu chưa đăng nhập thì sẽ đá về trang login yêu cầu đăng nhập còn đăng nhập rồi thì sẽ chuyển đến trang profiles.
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8072af7b-298b-432b-be26-4b9ff6f2ebc2)
+
+
+[--Custom hook)]() <br>
+Trang web tham khảo thêm về (custom) hooks:
+1. https://usehooks.com/ (custom hooks)
+2. https://usehooks-ts.com/ (custom hooks)
+3. https://mantine.dev/hooks/use-counter/ (bộ hooks của thư viện mantine)
+4. https://github.com/streamich/react-use
+
+- call API sử dụng custom hook và render ra giao diện
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/ed8c1e85-7bc1-42f6-8032-decac1fe33f6)
 
 
 
