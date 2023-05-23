@@ -108,7 +108,14 @@ Call API danh sách phim
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/dcb528bb-7445-4aac-8550-199c683f843b)
 
 
-[--Thư viện history)]() <br>
+[--Thư viện history, cấu hình request và response)]() <br>
+- "useNavigate" chỉ sử dụng được trong functional component nhưng "history" sử sụng được bất kỳ file nào kể cả trong reducer
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/d05e88bc-2579-4846-9afe-fe7fd627d9d7)
+
+- Nếu chưa đăng nhập thì sẽ đá về trang login yêu cầu đăng nhập còn đăng nhập rồi thì sẽ chuyển đến trang profiles.
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/657ad01f-d859-41e4-bd67-c15dee9fe355)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8072af7b-298b-432b-be26-4b9ff6f2ebc2)
+
 
 
 
