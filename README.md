@@ -126,6 +126,7 @@ Trang web tham khảo thêm về (custom) hooks:
 2. https://usehooks-ts.com/ (custom hooks)
 3. https://mantine.dev/hooks/use-counter/ (bộ hooks của thư viện mantine)
 4. https://github.com/streamich/react-use
+5. https://github.com/streamich/react-use?fbclid=IwAR3R1tQBNTKowvRT60CDIjnIstcfGUnMewyi7R3yP2QSLBUJH1EgTg5hzxE
 
 - call API sử dụng custom hook và render ra giao diện
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/ed8c1e85-7bc1-42f6-8032-decac1fe33f6)<br><br>
