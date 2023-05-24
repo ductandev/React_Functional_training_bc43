@@ -105,18 +105,22 @@ Cấu hình chung cho Header API, cài đặt interCepter cho request API (`Bear
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8c6d0f50-267f-4c6d-a0fb-a3f527b206c9)
 
 Call API danh sách phim  
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/dcb528bb-7445-4aac-8550-199c683f843b)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/dcb528bb-7445-4aac-8550-199c683f843b) <br><br>
 
 
-[--Thư viện history, cấu hình request và response)]() <br>
+[--Thư viện history, cấu hình request và response)]()
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/a1c483be-6ebc-4515-a500-2a75d876b3a0)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/574cb7c5-4369-4954-84a2-05432d9118bb)
+
 - "useNavigate" chỉ sử dụng được trong functional component nhưng "history" sử sụng được bất kỳ file nào kể cả trong reducer
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/d05e88bc-2579-4846-9afe-fe7fd627d9d7)
 
 - Nếu chưa đăng nhập thì sẽ đá về trang login yêu cầu đăng nhập còn đăng nhập rồi thì sẽ chuyển đến trang profiles.
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8072af7b-298b-432b-be26-4b9ff6f2ebc2)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8072af7b-298b-432b-be26-4b9ff6f2ebc2) <br><br>
 
 
 [--Custom hook)]() <br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/eeedddc2-8529-4281-a36a-6ffbc5242ce0)
 Trang web tham khảo thêm về (custom) hooks:
 1. https://usehooks.com/ (custom hooks)
 2. https://usehooks-ts.com/ (custom hooks)
@@ -124,7 +128,12 @@ Trang web tham khảo thêm về (custom) hooks:
 4. https://github.com/streamich/react-use
 
 - call API sử dụng custom hook và render ra giao diện
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/ed8c1e85-7bc1-42f6-8032-decac1fe33f6)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/ed8c1e85-7bc1-42f6-8032-decac1fe33f6)<br><br>
 
+
+# Buổi 6: Thư viện Antd design
+```
+$ npm i antd
+```
 
 
