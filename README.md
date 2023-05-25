@@ -140,7 +140,7 @@ $ npm i @ant-design/icons
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b35517c4-33e0-4558-afa9-ab1cc84c4a89) <br><br>
 
 
-[--HOC: Higher order component)]()
+[--HOC: (Higher order component)]()
 
 
 
