@@ -132,9 +132,19 @@ Trang web tham khảo thêm về (custom) hooks:
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/ed8c1e85-7bc1-42f6-8032-decac1fe33f6)<br><br>
 
 
-# Buổi 6: Thư viện Antd design
+# Buổi 6: Thư viện Antd design - HOC (Higher order component)
 ```
 $ npm i antd
+$ npm i @ant-design/icons
 ```
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b35517c4-33e0-4558-afa9-ab1cc84c4a89) <br><br>
+
+
+[--HOC: Higher order component)]()
+
+
+
+
+
 
 
