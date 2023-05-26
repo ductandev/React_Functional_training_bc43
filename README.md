@@ -133,14 +133,34 @@ Trang web tham khảo thêm về (custom) hooks:
 
 
 # Buổi 6: Thư viện Antd design - HOC (Higher order component)
+[--Thư viện Antd design)]()
 ```
 $ npm i antd
 $ npm i @ant-design/icons
 ```
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b35517c4-33e0-4558-afa9-ab1cc84c4a89) <br><br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b35517c4-33e0-4558-afa9-ab1cc84c4a89) <br><br><br><br>
 
 
 [--HOC: (Higher order component)]()
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/39714465-e242-4992-a5e3-a8164ea2a0f5)
+-Viết theo class
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/59da07fb-b3f2-478a-a4b1-70bd4a38679d) <br><br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e09c7400-004e-4340-a62a-a0aebf0647b2)
+-HOC ko sài được trên "functional Component return về 1 cái functional" mà thay vào đó phải retun về class mà class ko sài được Hook
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/bb80e9fd-913d-4dfb-ba67-ee330dfd5171) 
+
+
+
+[--Container Component (viết theo kiểu HOC và sài được HOOK)]() <br>
+- Container Component viết theo kiểu HOC, nó sẽ nhận vào component không phài dưới dạng tham số mà chủ yếu nhận vào dưới dạng props
+- Conatiner component nhận vào component dưới dạng props và render props compnent đó trong phần nội dung
+- Conatiner component component thông qua porps.
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8a8ecaed-64bc-44ec-a286-ebf1a17947ed)
+Truyền dạng thẻ thì sài databinding
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/2632a1a6-4fdf-443e-801d-c7d237ed96dc)
+Truyền dạng files thì sài dạng thẻ bên kia
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/a0c56d44-9794-45d4-8fae-10fe0e4046c5)
+
 
 
 
