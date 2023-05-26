@@ -28,6 +28,7 @@ import './index.css'
 import DemoAntd from './pages/DemoAntd'
 import DemoHOC from './pages/DemoHOC';
 import ContainerModal from './HOC/ContainerModal';
+import ResponsiveTemplate from './templates/ResponsiveTemplate';
 
 
 // Tạo ra 1 history tương tự useNaviagte (useNaviagte: chỉ sài được cho funtional component)
@@ -39,7 +40,7 @@ root.render(
     <HistoryRouter history={history}>
       <Routes>
         <Route path='' element={<HomeTemplate />}>
-          <Route index element={<Home />}></Route>
+          <Route index element={<ResponsiveTemplate component={Home} mobileComponent={HomeMobile}/>}></Route>
           <Route path='login' element={<Login />}></Route>
           <Route path='usestate' element={<UseStateDemo />}></Route>
           <Route path='useeffect' element={<UseEffectDemo />}></Route>
