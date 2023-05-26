@@ -170,6 +170,8 @@ Sử dụng redux để truyền thẻ component
 
 [--Responsive)]()
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/6c8e06ac-2774-4604-9aa9-9d85b218d055)
+giao diện <768px sẽ load ra giao diện như hình 
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/06d85b89-5739-4bc4-b271-7e528875140c)
 
 
 
