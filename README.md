@@ -105,26 +105,75 @@ Cấu hình chung cho Header API, cài đặt interCepter cho request API (`Bear
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8c6d0f50-267f-4c6d-a0fb-a3f527b206c9)
 
 Call API danh sách phim  
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/dcb528bb-7445-4aac-8550-199c683f843b)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/dcb528bb-7445-4aac-8550-199c683f843b) <br><br>
 
 
-[--Thư viện history, cấu hình request và response)]() <br>
+[--Thư viện history, cấu hình request và response)]()
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/a1c483be-6ebc-4515-a500-2a75d876b3a0)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/574cb7c5-4369-4954-84a2-05432d9118bb)
+
 - "useNavigate" chỉ sử dụng được trong functional component nhưng "history" sử sụng được bất kỳ file nào kể cả trong reducer
 ![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/d05e88bc-2579-4846-9afe-fe7fd627d9d7)
 
 - Nếu chưa đăng nhập thì sẽ đá về trang login yêu cầu đăng nhập còn đăng nhập rồi thì sẽ chuyển đến trang profiles.
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8072af7b-298b-432b-be26-4b9ff6f2ebc2)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8072af7b-298b-432b-be26-4b9ff6f2ebc2) <br><br>
 
 
 [--Custom hook)]() <br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/eeedddc2-8529-4281-a36a-6ffbc5242ce0)
 Trang web tham khảo thêm về (custom) hooks:
 1. https://usehooks.com/ (custom hooks)
 2. https://usehooks-ts.com/ (custom hooks)
 3. https://mantine.dev/hooks/use-counter/ (bộ hooks của thư viện mantine)
 4. https://github.com/streamich/react-use
+5. https://github.com/streamich/react-use?fbclid=IwAR3R1tQBNTKowvRT60CDIjnIstcfGUnMewyi7R3yP2QSLBUJH1EgTg5hzxE
 
 - call API sử dụng custom hook và render ra giao diện
-![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/ed8c1e85-7bc1-42f6-8032-decac1fe33f6)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/ed8c1e85-7bc1-42f6-8032-decac1fe33f6)<br><br>
+
+
+# Buổi 6: Thư viện Antd design - HOC (Higher order component) - Responsive
+[--Thư viện Antd design)]()
+```
+$ npm i antd
+$ npm i @ant-design/icons
+```
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b35517c4-33e0-4558-afa9-ab1cc84c4a89) <br><br><br><br>
+
+
+[--HOC: (Higher order component)]()
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/39714465-e242-4992-a5e3-a8164ea2a0f5)
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/a42dcfac-ce22-4cfc-8846-d0aa4e5325c9)
+
+-Viết theo class
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/59da07fb-b3f2-478a-a4b1-70bd4a38679d) <br><br>
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/e09c7400-004e-4340-a62a-a0aebf0647b2)
+-HOC ko sài được trên "functional Component return về 1 cái functional" mà thay vào đó phải retun về class mà class ko sài được Hook
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/bb80e9fd-913d-4dfb-ba67-ee330dfd5171) 
+
+
+
+[--Container Component (viết theo kiểu HOC và sài được HOOK)]() <br>
+- Container Component viết theo kiểu HOC, nó sẽ nhận vào component không phài dưới dạng tham số mà chủ yếu nhận vào dưới dạng props
+- Conatiner component nhận vào component dưới dạng props và render props compnent đó trong phần nội dung
+- Conatiner component nhận component thông qua porps.
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/8a8ecaed-64bc-44ec-a286-ebf1a17947ed)<br>
+Truyền dạng thẻ thì sài databinding
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/2632a1a6-4fdf-443e-801d-c7d237ed96dc)<br>
+Truyền dạng files thì sài dưới dạng thẻ
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/a0c56d44-9794-45d4-8fae-10fe0e4046c5)<br>
+Truyền thẻ dưới dạng button dùng hook
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/c1bdf447-0ca8-42ac-a5d1-742242aabad1)<br>
+Sử dụng redux để truyền thẻ component
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/b5d3bd43-1fe0-409d-b818-573da58c6ef6) <br><br><br><br>
+
+
+[--Responsive)]()
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/6c8e06ac-2774-4604-9aa9-9d85b218d055)
+giao diện <768px sẽ load ra giao diện như hình 
+![image](https://github.com/ductandev/React_Functional_training_bc43/assets/42485856/06d85b89-5739-4bc4-b271-7e528875140c)
+
+
 
 
 

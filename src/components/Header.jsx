@@ -43,6 +43,12 @@ export default function Header() {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/register">Register</NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/antd">AntD</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/hoc">Demo HOC</NavLink>
+                    </li>
 
 
                     <li className="nav-item dropdown">
